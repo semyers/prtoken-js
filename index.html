@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRT Token Decryptor</title>
+    <style>
+        body { font-family: sans-serif; margin: 2em; }
+        textarea { width: 100%; height: 100px; margin-bottom: 1em; }
+        pre { background-color: #f4f4f4; padding: 1em; border: 1px solid #ddd; white-space: pre-wrap; word-wrap: break-word; }
+    </style>
+</head>
+<body>
+    <h1>Probabilistic Reveal Token (PRT) Decryptor</h1>
+    <textarea id="prt-token-input" placeholder="Paste your PRT token here..."></textarea>
+    <button id="decrypt-button">Decrypt Token</button>
+    <h2>Results</h2>
+    <pre id="results-output">Decryption results will appear here.</pre>
+
+    <!-- Include elliptic.js from a CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/elliptic/6.5.4/elliptic.min.js"></script>
+    <script src="prt-tooling-browser.js"></script>
+    <script src="browser-app.js"></script>
+</body>
+</html>
